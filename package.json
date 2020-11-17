@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "exports": {
+    ".": {
+      "module": "./lib/bundle.js",
+      "require": "./lib/bundle.cjs",
+      "default": "./lib/bundle.js"
+    }
+  },
+  "browser": "./lib/bundle.js",
+  "main": "./lib/bundle.cjs",
+  "module": "./lib/bundle.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.12.5",
+    "@rollup/plugin-babel": "^5.2.1",
+    "react": "^17.0.1",
+    "rollup": "^2.33.2"
+  }
+}
